@@ -79,10 +79,6 @@ img{
 
 
 /* #addregion main */
-.top{
-    width: calc(100% - 80px);
-    width: 1912px;
-}
 
 .sidebar{
     width: 245px;
@@ -284,13 +280,12 @@ img{
         margin-bottom: 10px;
     }
     .row{
-        margin-top: 10px;
+        margin-top: 30px;
     }
     img{
         width: 100%;
         border-radius: 50%;
         padding: 0 3px;
-        
     }
     .col-2{
         margin-bottom: 50px;
