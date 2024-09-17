@@ -28,6 +28,9 @@ img{
 .p-24{
     padding: 1.5rem;
 }
+.dflex{
+    display: flex;
+}
 /* #addregion main */
 .top{
     width: calc (100% - 80px);
@@ -74,6 +77,7 @@ img{
 .recently_played{
     height: 370px;
     background-color: yellow;
+    color: white;
 
     h3{
         margin-bottom: 15px;
@@ -81,11 +85,25 @@ img{
     
     img{
         width: 230px;
-        margin-left: 
+        margin-left; 
         display: block;
     }
 
     
+}
+.create_for_you{
+    height: 320px;
+    background-color: blue;
+    
+    h2{
+        color: white;
+    }
+    img{
+        width: 230px;
+    }
+    .col-2>span{
+        color: white;
+    }
 }
 
 
@@ -96,13 +114,8 @@ img{
 
 
 
-.dflex{
-    display: flex;
-}
 
 
 
-.create_for_you{
-    height: 320px;
-    background-color: blue;
-}
+
+
