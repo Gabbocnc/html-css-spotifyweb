@@ -19,13 +19,35 @@
     <main>
         <div class="top dflex">
             <div class="sidebar dflex">
+                <div class="logo">
+                    <img src="./assets/img/logo.svg" alt="">
+                </div>
                 <div class="container">
-                    <div class="logo">LOGO</div>
-                    <div class="home">Home</div>
-                    <div class="search">Cerca</div>
-                    <div class="library">La tua libreria</div>
+                    <div class="home">
+                        <button class="casa dflex">
+                            <img src="./assets/img/home.svg" alt="">
+                            <span>Home</span>
+                        </button>
+                    </div>
+                    <div class="search">
+                        <button class="cerca dflex">
+                            <img src="./assets/img/search.svg" alt="">
+                            <span>Cerca</span>
+                            
+                        </button>
+                    </div>
+                    <div class="library">
+                        <button class="libreria dflex">
+                            <img src="./assets/img/libreria.svg" alt="">
+                            <span>La tua libreria</span>
+                        </button>
+                    </div>
                     <div class="playlist">
-                        <div class="button">Crea Playlist</div>
+                        <h4>PLAYLIST</h4>
+                        <div class="button">
+                            <i class="fa-solid fa-plus"></i>
+                            <span>Cerca Playlist</span>
+                        </div>
                         <div class="nome_playlist">Nome Playlist</div>
                         <div class="nome_playlist">Nome Playlist</div>
                         <div class="nome_playlist">Nome Playlist</div>
@@ -34,7 +56,19 @@
                         <div class="nome_playlist">Nome Playlist</div>
                         <div class="nome_playlist">Nome Playlist</div>
                     </div>
+                    <div class="install">
+                            <button class="installa dflex">
+                                <img src="./assets/img/download.svg" alt="">
+                                <span>Installa app</span>
+                            </button>
+                            <hr>
+                            <button class="users dflex">
+                                <img src="./assets/img/profile.svg" alt="">
+                                <span>John Doe</span>
+                            </button>
+                    </div>
                 </div>
+                
 
 
             </div>
@@ -167,11 +201,14 @@
 
                     </div>
                     <div class="col-4 tx-right">
-                        <div class="cointaner right_bar">
+                        <div class="cointaner right_bar dflex ">
                             <div class="button_right">
                                 <button class="btn"><i class="fa-solid fa-list-ul"></i></button>
                                 <button class="btn"><i class="fa-solid fa-display"></i></button>
                                 <button class="btn"><i class="fa-solid fa-volume-high"></i></button>
+                                <input type="range" name="volume" id="volume">
+
+                                </div>
                             </div>
                         </div>
 

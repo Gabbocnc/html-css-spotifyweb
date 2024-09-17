@@ -54,6 +54,30 @@ img{
 .tx-right{
     text-align: right;
 }
+/* common */
+.libreria, .cerca, .casa {
+    width: 12%;
+    background-color: transparent;
+    border: none;
+    color: var(--grey);
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    margin-left: -2px;
+    font-size: 15px;
+    font-weight: bold;
+    
+    span{
+        margin-left: 5px;
+    }
+}
+
+
+
+
+
+
+
 /* #addregion main */
 .top{
     width: calc (100% - 80px);
@@ -65,11 +89,61 @@ img{
     width: 245px;
     flex-direction: column;
     background-color: black;
+    position: relative;
+    .logo{
+        width: 50%;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
 
     .container{
-        color: rgb(255, 254, 254);
+        color: var(--grey);
         padding: 1rem;
+        margin-top: 20px;
         
+        h4{
+            margin-bottom: 20px;
+        }
+
+        div{
+            margin-bottom: 20px;
+        }
+    }
+    .install{
+        color: white;
+        text-align: center;
+        position: absolute;
+        bottom: 1%;
+        width: 85%;
+        
+    
+        .installa{
+            width: 10%;
+            background-color: transparent;
+            border: none;
+            color: var(--grey);
+            margin-bottom: 10px;
+            
+            span{
+                margin-left: 10px;
+            }
+        }
+        .users{
+            width: 30px;
+            height: 30px;
+            background: var(--grey);
+            color: white;
+            border-radius: 50%;
+            margin-top: 10px;
+            
+            span{
+                margin-left: 10px;
+            }
+            img{
+                padding: 4px;
+                margin: 0;
+            }
+        }
     }
 }
 .content{
@@ -160,6 +234,7 @@ img{
 }
 .most_popular{
     height: 330px;
+    margin-top: 30px;
 
     h2{
         color: white;
@@ -181,6 +256,8 @@ img{
     top: 0;
     bottom: 0;
     background-color: var(--dark-gray);
+    vertical-align: middle;
+    padding: 10px;
     
     button{
         color: white;
@@ -211,8 +288,17 @@ img{
     .range{
         color: white;
     }
+    .right_bar{
+        align-items: center;
+        text-align: right;
+        vertical-align: middle;
+        justify-content: right;
+    }
 
-}
+} 
+
+    
+
 
 
     
