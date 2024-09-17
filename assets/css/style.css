@@ -1,3 +1,11 @@
+/* root */
+:root{
+    --light-dark: #080b12;
+    --light-grey: #151922;
+    --grey: #696969;
+    --dark-gray: #282828;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -56,16 +64,19 @@ img{
 .sidebar{
     width: 245px;
     flex-direction: column;
-    
+    background-color: black;
+
     .container{
         color: rgb(255, 254, 254);
         padding: 1rem;
+        
     }
 }
 .content{
     width: calc(100% - 245px);
     overflow-y: scroll;
     height: 940px;
+    background-color: var(--light-grey);
 }
 
 .upgrade{
@@ -75,6 +86,7 @@ img{
     top: 0;
     bottom: 0;
     text-align: right;
+    background-color: var(--light-dark);
     
 }
 
@@ -168,6 +180,7 @@ img{
     z-index: 1000;
     top: 0;
     bottom: 0;
+    background-color: var(--dark-gray);
     
     button{
         color: white;
