@@ -270,6 +270,7 @@ img {
     font-size: 15px;
     color: var(--grey);
     font-weight: bold;
+    font-size: 12px;
 
 
     .in_evidenza {
@@ -334,8 +335,8 @@ img {
             flex-wrap: wrap;
         }
 
-        .col-s-6 {
-            width: calc((100% / 12) * 6);
+        .col-s-5 {
+            width: calc((100% / 12) * 5);
         }
 
         img {
@@ -357,8 +358,8 @@ img {
     }
 
     @media (max-width:600px) {
-        .col-s-6 {
-            width: calc((100% / 12) * 6);
+        .col-s-5 {
+            width: calc((100% / 12) * 5);
         }
 
     }
@@ -467,11 +468,23 @@ img {
         width: 30%;
         margin-left: 10px;
         vertical-align: middle;
+        position: relative;
+
+        @media (max-width:600px){
+            margin-left: 0;
+            }
+        }
 
 
         img {
             height: 50px;
             margin-right: 10px;
+           
+            /* @media (max-width:600px){
+                height: 35px;
+                margin-top: 2px;
+            } */
+
         }
 
 
@@ -480,10 +493,8 @@ img {
             white-space: nowrap;
             padding: 5px;
 
-
-
             :nth-child(1) {
-                color: white;
+                color: rgb(255, 255, 255);
             }
 
             :nth-child(2) {
@@ -498,53 +509,106 @@ img {
 
         .fa-heart {
             margin-left: 15px;
+            @media (max-width:600px) {
+             position: absolute; 
+                top: 1px
+            }
 
         }
 
         .fa-folder {
             margin-left: 15px;
+            @media (max-width:600px) {
+             position: absolute; 
+                
+            }
         }
 
+
+        .middle_bar {
+            align-items: center;
+            text-align: center;
+            vertical-align: middle;
+            justify-content: center;
+            flex-direction: column;
+            
+            @media (max-width:600px) {
+                margin-left: 20px;
+                
+            }
+    
+            .button {
+                font-size: 27px;
+                padding-bottom: 10px;
+                
+                i{
+                    color: white;
+                }
+    
+            }
+    
+            .fa-circle-play {
+                font-size: 25px;
+            }
+    
+            .time {
+                
+                width: 300px;
+                height: 3px;
+               
+                @media (max-width:600px) {
+                    width: 120px;
+                    
+                
+                }
+    
+            }
+    
+            .range {
+                color: rgb(255, 255, 255);
+
+                span{
+                    font-size: 12px;
+                    margin-top: -5px;
+                    padding: 0 10px;
+
+                    @media (max-width:600px) {
+                        font-size: 10px;
+                
+                    }
+                }
+    
+            }
+        }
+    
+        .right_bar {
+            align-items: center;
+            vertical-align: middle;
+            justify-content: right;
+            padding-top: 15px;
+            padding-right: 5px;
+
+            i{
+                color: white;
+            }
+
+            @media (max-width:600px) {
+                padding-right: 0;
+                padding-top: 20px;
+
+                #volume{
+                    width: 80px;
+                    height: 4px;
+                    margin-top: 3px;
+
+                }
+                .btn{
+                    font-size: 11px;
+                }
+            }
+
+        }
     }
-
-    .middle_bar {
-        align-items: center;
-        text-align: center;
-        vertical-align: middle;
-        justify-content: center;
-        flex-direction: column;
-
-        .button {
-            font-size: 27px;
-
-        }
-
-        .fa-circle-play {
-            font-size: 30px;
-        }
-
-        .time {
-            width: 300px;
-            height: 7px;
-
-        }
-
-        .range {
-            color: white;
-
-        }
-    }
-
-    .right_bar {
-        align-items: center;
-        text-align: right;
-        vertical-align: middle;
-        justify-content: right;
-        padding-top: 15px;
-        padding-right: 5px;
-    }
-}
-
 
 /* img_hover */
 .card {
