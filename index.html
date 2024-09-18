@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
+<body class="">
     <header></header>
     <!-- header -->
     <main>
@@ -76,7 +76,7 @@
                 <div class="upgrade">
                     <input type="button" value="EFFETTUA L'UPDRAGE">
                 </div>
-                <div class="container p-1r">
+                <div id="main_container" class="container p-1r">
                     <div class="presentation dflex ">
                         <div class="in_evidenza">IN EVIDENZA</div>
                         <div class="podcast">PODCAST</div>
@@ -150,11 +150,11 @@
                         <h2>Creato per John Doe</h2>
                         <span>Piu ascolti, piu accurati saranno i suggerimenti</span>
                         <div class="row dflex">
-                            <div class="col-2 col-s-5">
+                            <div class="col-2 col-md-3 col-s-6">
                                 <img src="./assets/img/split.jpeg" alt="">
                                 <div class="tx-center">Description</div>
                             </div>
-                            <div class="col-2 col-s-5">
+                            <div class="col-2 col-md-3 col-s-6">
                                 <img src="./assets/img/split.jpeg" alt="">
                                 <div class="tx-center">Description</div>
                             </div>
@@ -164,11 +164,11 @@
                         <h2>Artisti piu popolari</h2>
                         <span>Piu ascolti, piu accurati saranno i suggerimenti</span>
                         <div class="row dflex">
-                            <div class="col-2">
+                            <div class="col-2 col-md-3 col-s-6">
                                 <img src="./assets/img/split.jpeg" alt="">
                                 <div class="tx-center">Description</div>
                             </div>
-                            <div class="col-2">
+                            <div class="col-2 col-md-3 col-s-6">
                                 <img src="./assets/img/split.jpeg" alt="">
                                 <div class="tx-center">Description</div>
                             </div>
@@ -209,7 +209,7 @@
                             </div>
                             <div class="range">
                                 <span>0:25</span>
-                                <input type="range" name="time" id="time">
+                                <input type="range" min="0" max="" step="1" value="25" id="time">
                                 <span>4:35</span>
                             </div>
 
