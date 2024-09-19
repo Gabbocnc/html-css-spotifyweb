@@ -182,7 +182,11 @@ img {
         position: absolute;
         bottom: 6%;
         width: 85%;
-
+       
+        @media (max-height:730px){
+            display: none;
+        }
+        
         @media (max-width:480px) {
             hr {
                 display: none;
@@ -198,11 +202,14 @@ img {
             margin-bottom: 10px;
             vertical-align: middle;
 
+          
+
             @media (max-width:480px) {
                 width: 30px;
                 text-align: center;
                 margin-left: -5px;
             }
+            
 
             span {
                 margin-left: 10px;
@@ -267,6 +274,7 @@ img {
         border-radius: 20px;
         padding: 15px 50px;
         margin: 25px;
+
     }
 
 }
@@ -747,6 +755,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
 /* #endregion input */
 
 /* #region scrollbar */
+
 ::-webkit-scrollbar{
     width: 10px;
 }
