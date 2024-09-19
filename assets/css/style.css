@@ -745,3 +745,19 @@ input[type="range"]::-webkit-slider-thumb:hover {
     opacity: 1;
 }
 /* #endregion input */
+
+/* #region scrollbar */
+::-webkit-scrollbar{
+    width: 10px;
+    border: 3px solid;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--grey);
+    border-radius: 17px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--dark-gray);
+    border: 1px solid rgba(255, 255, 255, 0.089);
+    border-radius: 17px;
+}
+/* #endregion scrollbar */
